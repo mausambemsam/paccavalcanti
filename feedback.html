@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="paccavalcanti-logo-icon.png">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="feedback.css">
+    <title>FeedBack - Paccavalcanti</title>
+</head>
+<body>
+    <header class="bg-header bg-def">
+        <a href="index.html">
+            <svg width="41" height="34" viewBox="0 0 41 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0.761719 23.8725V0H27.6383C30.1582 0 32.3631 0.497343 34.253 1.49203C36.1429 2.48672 37.6128 3.8848 38.6627 5.68629C39.7127 7.48778 40.2377 9.5932 40.2377 12.0025C40.2377 14.434 39.6961 16.5394 38.613 18.3188C37.541 20.0982 36.0324 21.4686 34.0872 22.4302C32.1531 23.3917 29.8929 23.8725 27.3067 23.8725H18.5535V16.7107H25.45C26.5331 16.7107 27.4559 16.5228 28.2185 16.1471C28.9922 15.7602 29.5835 15.2132 29.9924 14.5058C30.4124 13.7985 30.6224 12.9641 30.6224 12.0025C30.6224 11.03 30.4124 10.2011 29.9924 9.51583C29.5835 8.81955 28.9922 8.28905 28.2185 7.92433C27.4559 7.54856 26.5331 7.36068 25.45 7.36068H22.2007V33.952L0.761719 23.8725Z" fill="white"/>
+                <path d="M20.0665 6.83979H31.5856V18.7804H20.0665V6.83979Z" fill="white"/>
+                <path d="M7.61821 12.0111C7.61821 12.0111 22.065 19.1052 15.985 19.1052C9.90492 19.1052 4.97607 15.9291 4.97607 12.0111C4.97607 8.09314 9.90492 4.91699 15.985 4.91699C22.065 4.91699 7.61821 12.0111 7.61821 12.0111Z" fill="#332A9A"/>
+                </svg>
+        </a>
+
+        <nav id="nav-container-id" class="nav-menu">
+            <button id="btn-mobile">
+                <span id="menu-shape"></span>
+            </button>
+            <ul id="menu">
+                <li><a id="planos-link" class="link-header" href="index.html#planos-container">PLANOS</a>
+                    <svg class="svg-right" width="9" height="15" viewBox="0 0 9 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1.5 1.5L7.5 7.5L1.5 13.5" stroke="white" stroke-width="2"/>
+                        </svg>
+                </li>
+                <li><a id="linkTar" class="link-header" href="templates.html">TEMPLATES<svg id="template-icon" width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0 0H4V4H0V0Z" fill="white"/>
+                    <path d="M8 0H12V4H8V0Z" fill="white"/>
+                    <path d="M8 8H12V12H8V8Z" fill="white"/>
+                    <path d="M0 8H4V12H0V8Z" fill="white"/>
+                    </svg></a>
+                    <svg class="svg-right" width="9" height="15" viewBox="0 0 9 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1.5 1.5L7.5 7.5L1.5 13.5" stroke="white" stroke-width="2"/>
+                            </svg>
+                </li>
+                <li><a class="link-header" href="duvidas.html">DÚVIDAS</a>
+                    <svg class="svg-right" width="9" height="15" viewBox="0 0 9 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1.5 1.5L7.5 7.5L1.5 13.5" stroke="white" stroke-width="2"/>
+                        </svg>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <section class="main-feedback">
+        <div class="main-box">
+            <h1>Dê-nos seu FeedBack</h1>
+            <p class="text-box">Sua opinião sobre nosso serviço é
+                de  <span class="span-cta">extrema importância</span>.
+            </p>
+        </div>
+    
+        <div class="form-text-container">
+            <form action="https://api.staticforms.xyz/submit" method="post">
+                <!-- Replace with accesKey sent to your email -->
+                <input type="hidden" name="accessKey" value="eacf9948-3c96-4750-a8c8-f71faccd9e66">
+                <input type="text" name="name" placeholder="Seu Nome">
+                <input type="text" name="email" placeholder="Seu Email">
+                <input type="text" name="phone" placeholder="Seu Número">
+                <textarea name="message" placeholder="Escreva Aqui"></textarea>
+                <input type="submit" value="Submit"/>
+            </form>
+            <div class="text-container">
+                <p><span class="span-cta">Tem alguma sugestão de como podemos melhorar nosso serviço, não gostou de algo etc? Escreva no campo de texto.</span></p>
+                <svg width="335" height="308" viewBox="0 0 335 308" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M44.7195 237.961L0.29541 73.9326L184.966 23.9182C202.28 19.229 218.355 18.5432 233.192 21.8609C248.028 25.1785 260.73 32.0494 271.297 42.4737C281.863 52.8979 289.388 66.3874 293.872 82.9422C298.396 99.6488 298.593 115.123 294.463 129.365C290.408 143.586 282.592 155.81 271.016 166.036C259.516 176.242 244.881 183.751 227.111 188.564L166.968 204.853L153.64 155.644L201.026 142.811C208.468 140.795 214.46 137.787 219 133.786C223.596 129.688 226.641 124.829 228.134 119.208C229.704 113.566 229.594 107.442 227.805 100.835C225.995 94.1525 223.009 88.8479 218.849 84.9212C214.743 80.898 209.693 78.3532 203.699 77.2869C197.76 76.1241 191.069 76.5504 183.627 78.5659L161.301 84.6125L210.784 267.322L44.7195 237.961Z" fill="#847FBE"/>
+                    <path d="M145.667 85.0051L224.816 63.5692L247.036 145.613L167.887 167.049L145.667 85.0051Z" fill="#847FBE"/>
+                    <path d="M69.7574 143.7C69.7574 143.7 182.223 165.56 140.447 176.875C98.6709 188.189 58.8941 175.538 51.6032 148.617C44.3123 121.696 72.2682 90.701 114.044 79.3867C155.821 68.0724 69.7574 143.7 69.7574 143.7Z" fill="#221D63"/>
+                    </svg>
+            </div>
+        </div>
+    </section>
+
+    <section class="planos-cta-container defconf">
+        <h1>Escolha o plano ideal!</h1>
+        <a class="linkconf" href="index.html#planos-container">VER PLANOS</a>
+    </section>
+
+
+    <footer class="bg-footer-container defconf bg-def">
+        <a href="index.html">
+            <svg class="svg-footer-logo" width="102" height="88" viewBox="0 0 102 88" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0 61.6829V0H69.4451C75.9561 0 81.6532 1.28506 86.5364 3.85519C91.4197 6.4253 95.2177 10.0378 97.9306 14.6925C100.644 19.3473 102 24.7874 102 31.0128C102 37.2953 100.601 42.7354 97.8021 47.3331C95.0321 51.9307 91.1341 55.4718 86.1081 57.9563C81.1106 60.4407 75.2707 61.6829 68.5884 61.6829H45.9713V43.1781H63.7909C66.5894 43.1781 68.9739 42.6926 70.9444 41.7216C72.9433 40.7222 74.4711 39.3086 75.5277 37.4809C76.6129 35.6533 77.1555 33.4973 77.1555 31.0128C77.1555 28.4998 76.6129 26.358 75.5277 24.5875C74.4711 22.7884 72.9433 21.4177 70.9444 20.4753C68.9739 19.5044 66.5894 19.0189 63.7909 19.0189H55.3951V87.7268L0 61.6829Z" fill="white"/>
+                <path d="M49.8806 17.673H79.6444V48.5257H49.8806V17.673Z" fill="white"/>
+                <path d="M17.716 31.0342C17.716 31.0342 55.0444 49.3644 39.3345 49.3644C23.6246 49.3644 10.8892 41.1577 10.8892 31.0342C10.8892 20.9108 23.6246 12.7041 39.3345 12.7041C55.0444 12.7041 17.716 31.0342 17.716 31.0342Z" fill="#332A9A"/>
+                </svg>
+        </a>
+
+        <hr>
+
+        <div class="link-footer-container">
+            <div class="link-footer-item">
+                <h1 class="escondedor-link">FAQ</h1>
+                <ul class="links-hs-container">
+                    <li><a href="duvidas.html#fdp-section">Formas De Pagamento</a></li>
+                    <li><a href="duvidas.html#cf-section">Como Funciona?</a></li>
+                </ul>
+            </div>
+
+            <div class="link-footer-item">
+                <h1 class="escondedor-link">A Paccavalcanti</h1>
+                <ul class="links-hs-container">
+                    <li><a href="duvidas.html#sap-section">Sobre Nós</a></li>
+                </ul>
+            </div>
+
+            <div class="link-footer-item">
+                <h1 class="escondedor-link">Atendimento</h1>
+                <ul class="links-hs-container">
+                    <li><a href="https://api.whatsapp.com/send?phone=5511943432275&text=Ol%C3%A1!" target="_blank">Fale Conosco</a></li>
+                    <li><a href="feedback.html" target="_blank">Feedback</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="media-links-container">
+            <ul class="links-hs-container">
+                <li><a target="_blank" href="https://www.facebook.com/profile.php?id=100094217919039"><svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M25.6668 14.0002C25.6668 7.56016 20.4402 2.3335 14.0002 2.3335C7.56016 2.3335 2.3335 7.56016 2.3335 14.0002C2.3335 19.6468 6.34683 24.3485 11.6668 25.4335V17.5002H9.3335V14.0002H11.6668V11.0835C11.6668 8.83183 13.4985 7.00016 15.7502 7.00016H18.6668V10.5002H16.3335C15.6918 10.5002 15.1668 11.0252 15.1668 11.6668V14.0002H18.6668V17.5002H15.1668V25.6085C21.0585 25.0252 25.6668 20.0552 25.6668 14.0002Z" fill="#E9ED11"/>
+                    </svg>
+                    </a></li>
+                <li><a target="_blank" href="https://www.instagram.com/paccavalcanti/"><svg width="29" height="28" viewBox="0 0 29 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M15.3115 2.33493C16.1629 2.33166 17.0142 2.34022 17.8653 2.3606L18.0917 2.36876C18.353 2.3781 18.6108 2.38976 18.9223 2.40376C20.1637 2.4621 21.0107 2.6581 21.7538 2.94627C22.5238 3.2426 23.1725 3.64393 23.8212 4.2926C24.4143 4.87547 24.8733 5.58054 25.1663 6.35877C25.4545 7.10193 25.6505 7.9501 25.7088 9.19143C25.7228 9.50177 25.7345 9.76077 25.7438 10.0221L25.7508 10.2484C25.7716 11.0992 25.7805 11.9501 25.7777 12.8011L25.7788 13.6714V15.1998C25.7817 16.0511 25.7728 16.9025 25.752 17.7536L25.745 17.9799C25.7357 18.2413 25.724 18.4991 25.71 18.8106C25.6517 20.0519 25.4533 20.8989 25.1663 21.6421C24.8743 22.4212 24.4151 23.1268 23.8212 23.7094C23.2378 24.3025 22.5324 24.7615 21.7538 25.0546C21.0107 25.3428 20.1637 25.5388 18.9223 25.5971C18.6108 25.6111 18.353 25.6228 18.0917 25.6321L17.8653 25.6391C17.0142 25.6598 16.1629 25.6688 15.3115 25.6659L14.4412 25.6671H12.914C12.0626 25.67 11.2113 25.661 10.3602 25.6403L10.1338 25.6333C9.85688 25.6232 9.57998 25.6116 9.30316 25.5983C8.06183 25.5399 7.21483 25.3416 6.4705 25.0546C5.69196 24.7622 4.98677 24.3031 4.40433 23.7094C3.81055 23.1264 3.35109 22.4209 3.058 21.6421C2.76983 20.8989 2.57383 20.0519 2.5155 18.8106C2.5025 18.5338 2.49084 18.2569 2.4805 17.9799L2.47466 17.7536C2.45316 16.9025 2.44343 16.0511 2.4455 15.1998V12.8011C2.44224 11.9501 2.4508 11.0992 2.47116 10.2484L2.47933 10.0221C2.48866 9.76077 2.50033 9.50177 2.51433 9.19143C2.57266 7.94893 2.76866 7.1031 3.05683 6.35877C3.3501 5.58016 3.81046 4.87528 4.4055 4.29377C4.98754 3.69964 5.69229 3.23977 6.4705 2.94627C7.21483 2.6581 8.06066 2.4621 9.30316 2.40376L10.1338 2.36876L10.3602 2.36293C11.2109 2.34143 12.0618 2.33171 12.9128 2.33376L15.3115 2.33493ZM14.1122 8.16827C13.3393 8.15733 12.5719 8.30013 11.8546 8.58834C11.1374 8.87656 10.4846 9.30446 9.93415 9.84716C9.38371 10.3899 8.94663 11.0366 8.6483 11.7497C8.34997 12.4628 8.19634 13.228 8.19634 14.001C8.19634 14.774 8.34997 15.5393 8.6483 16.2524C8.94663 16.9655 9.38371 17.6122 9.93415 18.1549C10.4846 18.6976 11.1374 19.1255 11.8546 19.4137C12.5719 19.7019 13.3393 19.8447 14.1122 19.8338C15.6593 19.8338 17.143 19.2192 18.237 18.1252C19.3309 17.0313 19.9455 15.5475 19.9455 14.0004C19.9455 12.4533 19.3309 10.9696 18.237 9.87564C17.143 8.78168 15.6593 8.16827 14.1122 8.16827ZM14.1122 10.5016C14.5771 10.493 15.0391 10.5772 15.4711 10.7492C15.9031 10.9212 16.2966 11.1775 16.6284 11.5032C16.9603 11.829 17.2239 12.2176 17.4038 12.6463C17.5838 13.0751 17.6766 13.5354 17.6766 14.0004C17.6767 14.4654 17.5841 14.9258 17.4043 15.3546C17.2245 15.7834 16.961 16.1721 16.6292 16.498C16.2975 16.8238 15.9042 17.0803 15.4722 17.2524C15.0402 17.4245 14.5783 17.5088 14.1133 17.5004C13.1851 17.5004 12.2948 17.1317 11.6385 16.4753C10.9821 15.8189 10.6133 14.9287 10.6133 14.0004C10.6133 13.0722 10.9821 12.1819 11.6385 11.5256C12.2948 10.8692 13.1851 10.5004 14.1133 10.5004L14.1122 10.5016ZM20.2372 6.41827C19.8608 6.43333 19.5048 6.59344 19.2439 6.86507C18.9829 7.13669 18.8372 7.49876 18.8372 7.87543C18.8372 8.25211 18.9829 8.61417 19.2439 8.8858C19.5048 9.15742 19.8608 9.31753 20.2372 9.3326C20.6239 9.3326 20.9949 9.17895 21.2684 8.90546C21.5419 8.63197 21.6955 8.26104 21.6955 7.87427C21.6955 7.48749 21.5419 7.11656 21.2684 6.84307C20.9949 6.56958 20.6239 6.41593 20.2372 6.41593V6.41827Z" fill="#E9ED11"/>
+                    </svg>
+                    </a></li>
+            </ul>
+        </div>
+        <script src="scriptButton.js"></script>
+    </footer>
+</body>
+</html>

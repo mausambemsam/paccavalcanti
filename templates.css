@@ -1,0 +1,133 @@
+:root {
+    --roxoPrin: #332a9a;
+    --roxoSec: #433AB1;
+    --amarUni: #F0F40A;
+    --branDef: #fff;
+    --fs60px: 3.75rem;
+    --fs50px: 3.125rem;
+    --fs40px: 2.5rem;
+    --fs38px: 2.375rem;
+    --fs26px: 1.625rem;
+    --fs16px: 1rem;
+    --maxWidth: 100%;
+}
+
+
+.title-box {
+    padding: 6.25rem 1.25rem;
+}
+
+.title-box h1 {
+    color: var(--roxoPrin);
+}
+
+
+/* templates container */
+
+
+.temp-box {
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(187deg, var(--roxoPrin) 33%, #130f4d 100%);
+    max-width: 100%;
+    padding: 3.75rem 0;
+    gap: 7.5rem;
+    margin-bottom: 6.25rem;
+}
+
+.temp-item-container {
+    display: flex;
+    flex-direction: column;
+    max-width: 43.75rem;
+    gap: 3.75rem;
+}
+
+.temp-box .temp-item {
+    border: 0.125rem solid var(--roxoSec);
+    border-radius: 0.625rem;
+    width: 100%;
+    padding: 2.5rem 4.375rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3.125rem;
+}
+
+.temp-box .temp-item h1 {
+    font-size: var(--fs40px);
+    color: var(--branDef);
+    text-align: center;
+}
+
+.temp-item a {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+}
+
+.media-links-container-header {
+    display: none;
+}
+
+
+/* medias <> */
+
+@media (max-width: 740px) {
+    .temp-item-container {
+        padding: 0 1.25rem;
+    }
+
+    .temp-box .temp-item {
+        max-width: 28.125rem;
+        padding: 2.5rem 2.1875rem;
+    }
+
+    .temp-box .temp-item h1 {
+        font-size: var(--fs26px);
+    }
+}
+
+@media (max-width: 540px) {
+    .nav-menu.activeMenu .media-links-container-header {
+        display: block;
+        padding: 21px;
+    position: absolute;
+    width: 100%;
+    top: 25rem;
+    right: 15.625rem;
+    z-index: 10000;
+    }
+    
+    .temp-item a {
+        flex-direction: column;
+    }
+
+}
+
+@media (max-width: 460px) {
+
+    .temp-item-container {
+        padding: 1.25rem 1.5rem;
+    }
+
+    .title-box h1 {
+        font-size: var(--fs26px);
+    }
+
+    .temp-box .temp-item h1 {
+        font-size: var(--fs16px);
+    }
+
+    .temp-item-container {
+        max-width: 100%;
+    }
+
+    .temp-item-container img {
+        max-width: 9.375rem;
+    }
+}
+
+/* medias </> */

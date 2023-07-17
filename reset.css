@@ -1,0 +1,353 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body h1 {
+    text-transform: capitalize !important;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+:root {
+    --roxoPrin: #332a9a;
+    --roxoSec: #433AB1;
+    --amarUni: #F0F40A;
+    --branDef: #fff;
+    --fs60px: 3.75rem;
+    --fs50px: 3.125rem;
+    --fs40px: 2.5rem;
+    --fs38px: 2.375rem;
+    --fs26px: 1.625rem;
+    --fs16px: 1rem;
+    --maxWidth: 100%;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+
+a {
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    transition: .3s;
+    font-size: 1rem;
+}
+
+h1 {
+    font-size: var(--fs60px);
+}
+
+/* default class values <> */
+
+.span-cta {
+    color: var(--amarUni);
+}
+
+.bg-header nav a.link-atual {
+    color: var(--amarUni);
+}
+
+#btn-mobile {
+    display: none;
+}
+
+.svg-right {
+    display: none;
+}
+
+.svg-footer-logo {
+    max-width: 17.5rem;
+}
+
+
+.nav-menu a.link-header {
+    color: var(--branDef);
+    font-weight: 500;
+}
+
+a.link-header:hover {
+    color: var(--amarUni);
+    transition: .6s;
+}
+
+
+a.linkconf {
+    padding: 0.625rem 2.5rem 0.625rem 2.5rem;
+    border-radius: 0.3125rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    color: var(--roxoSec);
+    background-color: var(--amarUni);
+    transition: .3s;
+    text-align: center;
+    font-size: var(--fs16px);
+    text-transform: uppercase;
+}
+
+a.linkconf:hover {
+    border-radius: 0.9375rem;
+    transition: .5s;
+}
+
+#template-icon {
+    margin-left: 0.375rem;
+    transition: 1s;
+}
+
+#template-icon.move {
+    transform: rotate(40deg);
+    transition: .7s;
+}
+
+#linkTar {
+    display: flex;
+    align-items: center;
+}
+
+/* default class values </> */
+
+.defconf {
+    max-width: 75rem;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+/* header <> */
+
+.bg-header {
+    background-color: var(--roxoPrin);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.375rem 2.375rem;
+    position: sticky;
+    top: 0;
+    max-width: var(--maxWidth);
+    z-index: 10000;
+    box-shadow: 0px 10px 10px -4px rgba(0,0,0,0.31);
+}
+
+/* header </> */
+
+.bg-def {
+    max-width: var(--maxWidth);
+    background-color: var(--roxoPrin);
+}
+
+/* footer <> */
+
+.bg-footer-container {
+    justify-content: center;
+    padding: 5rem 1.875rem;
+    flex-direction: column;
+}
+
+.link-footer-container {
+    display: flex;
+    gap: 3rem;
+}
+
+.link-footer-container ul {
+    margin-top: 1.25rem;
+    display: flex;
+    flex-direction: column;
+    line-height: 0.875rem;
+}
+
+.link-footer-container ul li a {
+    color: var(--branDef);
+    font-weight: 400;
+    font-size: var(--fs16px);
+}
+
+.link-footer-container ul li a:hover {
+    color: var(--amarUni);
+}
+
+.bg-footer-container h1 {
+    font-size: var(--fs26px);
+    color: var(--branDef);
+}
+
+.bg-footer-container hr {
+    height: 0.125rem;
+    width: 44.375rem;
+    background-color: var(--roxoSec);
+    border: none;
+    margin: 1.25rem auto 2.5rem auto;
+    min-width: 5.625rem;
+}
+
+.media-links-container {
+    margin-top: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.media-links-container ul {
+    gap: 0.875rem;
+}
+
+/* footer </> */
+
+/* cta container <> */
+
+.planos-cta-container {
+    padding: 3.75rem 0;
+    flex-direction: column;
+    max-width: var(--maxWidth);
+    background-image: url(bg-backcta.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.planos-cta-container h1 {
+    font-size: var(--fs38px);
+    color: var(--branDef);
+    margin-bottom: 1.625rem;
+}
+
+/* cta container </> */
+
+
+/* medias <> */
+
+@media (max-width: 850px) {
+    .bg-footer-container hr {
+        width: 31.25rem;
+    }
+
+    .link-footer-container {
+        flex-direction: column;
+        align-self: center;
+    }
+
+    .bg-footer-container {
+        padding: 3.125rem 1rem;
+    }
+
+    .bg-footer-container hr {
+        width: 18.75rem;
+    }
+
+    .bg-footer-container .svg-logo-footer {
+        max-width: 15.625rem;
+    }
+}
+
+@media (max-width: 740px) {
+    .planos-cta-container h1 {
+        font-size: var(--fs26px) !important;
+    }
+}
+
+
+    @media (max-width: 540px) {
+    .svg-right {
+        display: block;
+        margin-right: 0.125rem;
+    }
+
+    #btn-mobile {
+        display: flex;
+        padding: .5rem 1rem;
+        font-size: 1rem;
+        border: none;
+        background: none;
+        cursor: pointer;
+        gap: .5rem;
+    }
+    
+    #menu-shape {
+        width: 1.25rem;
+        border-top: 0.125rem solid var(--branDef);
+    }
+
+    #menu-shape::after, #menu-shape::before {
+        content: '';
+        display: block;
+        width: 1.25rem;
+        height: 0.125rem;
+        background-color: var(--branDef);
+        margin-top: 0.3125rem;
+        transition: .3s;
+        position: relative;
+    }
+
+    #nav-container-id.activeMenu #menu-shape {
+        border-top-color: transparent;
+    }
+
+    #nav-container-id.activeMenu #menu-shape::before {
+        transform: rotate(135deg);
+    }
+
+    #nav-container-id.activeMenu #menu-shape::after {
+        transform: rotate(-135deg);
+        top: -0.4375rem;
+    }
+
+
+    #menu {
+        display: none;
+        padding-top: 0.375rem;
+        position: absolute;
+        width: 100%;
+        top: 5rem;
+        right: 0px;
+        z-index: 10000;
+        transition: .6s;
+        background-color: var(--roxoPrin);
+        visibility: hidden;
+        overflow-y: hidden;
+    }
+
+    #menu li {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 2.25rem;
+        padding-left: 1.25rem;
+        padding-right: 2.8125rem;
+    }
+
+    #menu li a {
+        display: flex;
+        align-items: center;
+        margin: 0 1rem;
+    }
+    
+    #nav-container-id.activeMenu #menu {
+        background: linear-gradient(164deg, var(--roxoPrin) 33%, #130f4d 100%);
+        height: calc(100vh - 4.6875rem);
+        display: block;
+        visibility: visible;
+        overflow-y: auto;
+    }
+
+}
+
+@media (max-width: 400px) {
+    .bg-footer-container hr {
+        min-width: 4.375rem;
+        max-width: 13rem;
+    }
+}
+
+/* medias </> */
